@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: rgb(221, 233, 228);
+}
+
+.wrapper {
+  margin: 3rem auto;
+  max-width: 90%;
+  background-color: white;
+  border-radius: 20px;
+}
+
+form {
+  width: 90%;
+  margin: auto;
+}
+
+h2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+h4 {
+  text-align: left;
+}
+
+.input-box input {
+  border-style: none;
+}
+
+i {
+  color: rgba(0, 0, 0, 0.651);
+  padding-right: 10px;
+}
+
+.input-box input:focus {
+  outline: none;
+}
+
+.input-box,
+.dob {
+  border: 1px solid rgba(0, 0, 0, 0.253);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.dob {
+  width: 25%;
+}
+
+.date-gender {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.gender {
+  display: flex;
+}
+
+.gender div {
+  padding-top: 0.5rem;
+}
+
+.exp-card {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.card {
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  display: flex;
+  padding-bottom: 2rem;
+}
+
+button {
+  padding: 0.6rem 0;
+  flex-grow: 1;
+  background-color: rgb(6, 149, 245);
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 760px) {
+  .wrapper {
+    max-width: 70%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .wrapper {
+    max-width: 50%;
+  }
+}

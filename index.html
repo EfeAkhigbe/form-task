@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment form</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h2>Zuri Training Payment Form</h2>
+        <form>
+            <h4>Account</h4>
+            <div>
+                <div class="input-box">
+                    <i class="fa fa-user icon"></i>
+                    <input type="text" placeholder="Full Name" required class="name">
+                </div>
+                <div class="input-box">
+                    <i class="fa fa-user icon"></i>
+                    <input type="text" placeholder="Username" required class="name">
+                </div>
+            </div>
+            <div>
+                <div class="input-box">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" placeholder="Email" required class="name">
+                </div>
+            </div>
+
+            <div class="date-gender">
+                <div>
+                    <h4>Date of birth</h4>
+                    <div class="input-date">
+                        <input type="text" placeholder="DD" class="dob">
+                        <input type="text" placeholder="MM" class="dob">
+                        <input type="text" placeholder="YY" class="dob">
+                    </div>
+                </div>
+            
+                <div class="input-gender">
+                    <h4>Gender</h4>
+                    <div class="gender-container">
+                        <div class="gender">
+                            <div>
+                                <input type="radio" name="gender" checked id="b1" class="radio">
+                            </div>
+                            <div>
+                                <label for="b1">Male</label>
+                            </div>
+                        </div>
+                        <div class="gender">
+                            <div>
+                                <input type="radio" name="gender" class="radio" id="b2">
+                            </div>
+                            <div>
+                                <label for="b2">Female</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h4>Payment Details</h4>
+                <div class="card-info">
+                    <div class="input-box mg">
+                        <i class="fa fa-credit-card icon"></i>
+                        <input type="tel" class="name" placeholder="Card number" required>
+                    </div>
+                    <div class="input-box">
+                        <i class="fa fa-user icon"></i>
+                        <input type="tel" required placeholder="Card CVC">
+                    </div>
+                </div>
+            </div>
+
+            <div class="exp-card">
+                <div>
+                    <h4>Exp date</h4>
+                    <select class="input-box">
+                        <option>01 Dec</option>
+                        <option>02 Dec</option>
+                        <option>03 Dec</option>
+                    </select>
+                    <select class="input-box">
+                        <option>2020</option>
+                        <option>2021</option>
+                        <option>2022</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <h4 class="card">Card type</h4>
+                    <div class="card">
+                        <input type="radio" name="pay" id="bc1" checked class="radio">
+                        <label for="bc1">
+                            <span>
+                                <i class="fa fa-cc-visa">Credit card</i>
+                            </span>
+                        </label>
+                    </div>
+                    <div>
+                        <input type="radio" name="pay" id="bc2" class="radio">
+                        <label for="bc2">
+                            <span>
+                                <i class="fa fa-cc-paypal">Paypal </i>
+                            </span>
+                        </label>
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="btn">
+                <button type="submit">Pay Now</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
